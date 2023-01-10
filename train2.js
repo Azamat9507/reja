@@ -74,7 +74,8 @@
 // });
 
 // 📌  Masalan: findBig([4, 5, 9, 12,  3]) return qilishi kerak 3ni, yoki findBig([0, 100, 5]) return 1
-//   G-task
+
+//   G-task 
 function findBig(arr) {
 
 let max = 0
@@ -83,7 +84,7 @@ for(let i = 0; i < arr.length; i++) {
         max = arr[i]
     }
 }
-return max
+return arr.indexOf(max)
     
 }
 
