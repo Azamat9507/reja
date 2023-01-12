@@ -33,4 +33,23 @@
 
 
 
-  
+//   function maslahatBering(num, callback);
+//   if (typeof num !== "number") callback("raqam olsin", null);
+//   else if(num > 100) callback(null, "100 dan katta");
+//   else {
+//     callback(null, "yuzdan kichkina");
+
+//   }
+
+//   maslahatBering(100, (err, data) => {
+//     if (err) console.log("ERROR", err)
+//     else {
+//         console.log("javob:",data);
+//     }
+// });
+
+
+const num = (a, b) => {
+    return a * b
+}
+console.log(num(3, 5));

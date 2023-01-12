@@ -76,18 +76,49 @@
 // 📌  Masalan: findBig([4, 5, 9, 12,  3]) return qilishi kerak 3ni, yoki findBig([0, 100, 5]) return 1
 
 //   G-task 
-function findBig(arr) {
+// function findBig(arr) {
 
-let max = 0
-for(let i = 0; i < arr.length; i++) {
-    if(arr[i]>max) {
-        max = arr[i]
-    }
-}
-return arr.indexOf(max)
+// let max = 0
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i]>max) {
+//         max = arr[i]
+//     }
+// }
+// return arr.indexOf(max)
     
-}
+// }
 
-const num1 = findBig([0, 5, 9, 12, 121, 3]);
-console.log(num1)
+// const num1 = findBig([0, 5, 9, 12, 121, 3]);
+// console.log(num1)
 
+// function maslahatBering(num, callback) {
+//     if (typeof num !== "number") callback("raqam bosin", null);
+//     else if (num > 100) callback(null, "100 dan katta");
+//     else {
+//         callback(null, "yuzdan kichkina");
+
+//     }
+// }
+
+// maslahatBering(100,(err, data)=> {
+//     if (err) console.log("ERROR:", err);
+//     else console.log("javob:",data);
+// })
+
+
+  function maslahatBering(num, callback){
+    if (typeof num !== "number") callback("raqam olsin", null);
+    else if(num > 100) callback(null, "100 dan katta");
+    else {
+      callback(null, "yuzdan kichkina");
+  
+    }
+  }
+
+
+  maslahatBering(90, (err, data) => {
+    if (err) console.log("ERROR", err)
+    else {
+        console.log("javob:",data);
+    }
+});

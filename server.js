@@ -1,10 +1,9 @@
 const http = require("http");
-const app = require("./app");
 const mongodb = require("mongodb");
 
 let db;
 const connectionString = 
-    "mongodb+srv://solijonov95:sa199506%40%40@cluster0.lx8gpju.mongodb.net/reja";
+    "mongodb+srv://solijonov95:sa199506%40%40@cluster0.lx8gpju.mongodb.net/Reja?retryWrites=true&w=majority"
 mongodb.connect(
     connectionString, 
     {
@@ -27,5 +26,4 @@ mongodb.connect(
       }
     }
 );
-
 
