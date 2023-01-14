@@ -23,7 +23,8 @@ document
     e.preventDefault();
 
 
-    axios.post("/create-item", { reja: createField.value })
+    axios
+    .post("/create-item", { reja: createField.value })
     .then((response) => {
         document
         .getElementById("item-list")
@@ -44,7 +45,7 @@ document.addEventListener("click", function (e) {
             .post("/delete-item", { id: e.target.getAttribute("data-id") })
             .then((respose) => {
                 console.log(respose.data);
-                e.target.parentElement.remove();
+                e.target.parentElement.parentElement.remove();
             })
             .catch((err) => {
                 console.log("Iltimos qaytadan harakat qiling");
