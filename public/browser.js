@@ -13,7 +13,7 @@ function itemTemplate(item) {
        Clear all
    </button>
 </div>
-</li>`;
+</li>`
 }
 let createField = document.getElementById("create-field");
 
@@ -34,4 +34,27 @@ document
     .catch((err) => {
         console.log("Iltimos qaytadan harakat qiling!");
     });
+});
+document.addEventListener("click", function (e) {
+    // delete operation
+    console.log(e.target);
+    if (e.target.classList.contains("delete-me")) {
+        if(confirm("Aniq ochirmoqchimisiz?")) {
+         axios
+            .post("/delete-item", { id: e.target.getAttribute("data-id") })
+            .then((respose) => {
+                console.log(respose.data);
+                e.target.parentElement.remove();
+            })
+            .catch((err) => {
+                console.log("Iltimos qaytadan harakat qiling");
+            });
+        }
+    }
+
+
+    // edit operation
+    if (e.target.classList.contains("edit-me")) {
+    alert("siz edit tugmasini bosdingiz")
+    }
 });
