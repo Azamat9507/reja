@@ -58,4 +58,24 @@
 // }
 
 // console.log(num(2, 6)); 
+ 
+// H - task
+function reverseString(str) {
+    return str.split("").reverse("").join("")
+}
 
+console.log(reverseString("javascript")); 
+
+// // H- task 2chi usul
+// class ReverseString {
+//     constructor(str) {
+//       this.str = str;
+//     }
+  
+//     reverse() {
+//       return this.str.split('').reverse().join('');
+//     }
+//   }
+//   const reverse = new ReverseString("javascript");
+//   console.log(reverse.reverse());
+    
