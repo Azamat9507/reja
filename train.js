@@ -60,11 +60,11 @@
 // console.log(num(2, 6)); 
  
 // H - task
-function reverseString(str) {
-    return str.split("").reverse("").join("")
-}
+// function reverseString(str) {
+//     return str.split("").reverse("").join("")
+// }
 
-console.log(reverseString("javascript")); 
+// console.log(reverseString("javascript")); 
 
 // // H- task 2chi usul
 // class ReverseString {
@@ -79,3 +79,59 @@ console.log(reverseString("javascript"));
 //   const reverse = new ReverseString("javascript");
 //   console.log(reverse.reverse());
     
+// function getPositive(numbers) {
+//     return numbers.filter(function(num) {
+//       return num > 0;
+//     });
+//   }
+  
+//   console.log(getPositive([0, -15, 5, -3, 2, -8, 9, -11])); // [5, 2, 9]
+
+// const magazine = "Lorem ipsum MrA sit amet, hack consecteture asipising you elit, sed do temor"
+// const note = "MrA hack you";
+
+// function canMurderWrite(note) {
+//     const magazineWords = magazine.split(" ");
+//     const noteWords = note.split(" ");
+//     const magazineWordCount = {};
+
+//     for (let i = 0; i < magazineWords.length; i++) {
+//         console.log(magazineWords);
+//         const a = magazineWords[i];
+//         if (magazineWordCount[a]) {
+//             magazineWordCount[a]++;
+//         } else {
+//             magazineWordCount[a] = 1;
+//         }
+//         console.log(magazineWordCount);
+        
+//     }
+//     for (let i = 0; i < noteWords.length; i++) {
+//         const a = noteWords[i];
+//         console.log(noteWords);
+//         if (!magazineWordCount[a]) {
+//             return false;
+//         } else {
+//             magazineWordCount[a]--;
+//         }
+//     }
+
+//     return true;
+// }
+// const result = canMurderWrite(note);
+// console.log("Hacker hack qila oladimi:", result);
+
+  
+// const magazine = "Lorem ipsum MrA sit amet, hack consecteture asipising you elit, sed do temor"
+// const note = "MrA hack you";
+
+// function canMurderWrite(note) {
+//     const magazineWords = magazine.split(" ");
+//     const noteWords = note.split(" ");
+    
+//     return noteWords.every(word => magazineWords.includes(word));
+    
+// }
+
+// const result = canMurderWrite(note);
+// console.log("Mr A hack qila oladi?",result);
