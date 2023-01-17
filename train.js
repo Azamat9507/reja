@@ -79,13 +79,7 @@
 //   const reverse = new ReverseString("javascript");
 //   console.log(reverse.reverse());
     
-// function getPositive(numbers) {
-//     return numbers.filter(function(num) {
-//       return num > 0;
-//     });
-//   }
-  
-//   console.log(getPositive([0, -15, 5, -3, 2, -8, 9, -11])); // [5, 2, 9]
+
 
 // const magazine = "Lorem ipsum MrA sit amet, hack consecteture asipising you elit, sed do temor"
 // const note = "MrA hack you";
@@ -121,7 +115,7 @@
 // const result = canMurderWrite(note);
 // console.log("Hacker hack qila oladimi:", result);
 
-  
+//   challanges
 // const magazine = "Lorem ipsum MrA sit amet, hack consecteture asipising you elit, sed do temor"
 // const note = "MrA hack you";
 
@@ -135,3 +129,12 @@
 
 // const result = canMurderWrite(note);
 // console.log("Mr A hack qila oladi?",result);
+
+// I-task
+function getPositive(numbers) {
+    return numbers.filter(function(num) {
+      return num > 0;
+    });
+  }
+  
+  console.log(getPositive([0, -15, 5, -3, 2, -8, 9, -11])); // [5, 2, 9]
