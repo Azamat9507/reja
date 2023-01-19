@@ -131,10 +131,25 @@
 // console.log("Mr A hack qila oladi?",result);
 
 // I-task
-function getPositive(numbers) {
-    return numbers.filter(function(num) {
-      return num > 0;
-    });
-  }
+// function getPositive(numbers) {
+//     return numbers.filter(function(num) {
+//       return num > 0;
+//     });
+//   }
   
-  console.log(getPositive([0, -15, 5, -3, 2, -8, 9, -11])); // [5, 2, 9]
+//   console.log(getPositive([0, -15, 5, -3, 2, -8, 9, -11])); // [5, 2, 9]
+
+// J-task
+function sign(n) {
+  if (n > 0) {
+      return 1;
+  } else if (n < 0) {
+      return -1;
+  } else {
+      return 0;
+  }
+}
+
+console.log(sign(5)); // 1
+console.log(sign(-3)); // -1
+console.log(sign(0)); // 0
